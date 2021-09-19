@@ -1,0 +1,23 @@
+.title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+.box {
+  width: 700px;
+  height: 200px;
+  background-color: red;
+}
+.dialog {
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+  display: none;
+}
+button {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
