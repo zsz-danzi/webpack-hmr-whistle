@@ -26,7 +26,16 @@ module.exports = {
 
   devServer: {
     port: 4300,
-    hot: true
+    hot: true,
+    allowedHosts: 'all',
+    client: {
+      webSocketTransport: 'sockjs',
+      webSocketURL: 'ws://127.0.0.1:4300/ws'
+    },
+    webSocketServer: 'sockjs',
+    // allowedHosts: [
+    //   'zsz-danzi.github.io',
+    // ],
   },
 
   // 配置webpack插件
@@ -38,7 +47,7 @@ module.exports = {
 
     new MiniCssExtractPlugin({
       //输出文件夹和文件名
-        filename:'./dist/css/index.css'
+        filename:'dist/css/index.css'
       })
   ],
 

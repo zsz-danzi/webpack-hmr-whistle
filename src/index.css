@@ -6,18 +6,18 @@
   text-align: center;
 }
 .box {
-  width: 700px;
+  width: 500px;
   height: 200px;
-  background-color: red;
+  background-color: #eee;
 }
 .dialog {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 100px;
   background-color: #000;
   display: none;
 }
 button {
   width: 200px;
-  height: 200px;
+  height: 300px;
   display: block;
 }
