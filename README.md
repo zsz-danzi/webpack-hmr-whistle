@@ -1,5 +1,5 @@
 # webpack-hmr-whistle
-webpack-dev-server 本地化起一个服务。提供给live地址，通过whistle代理到本地开发，并监听端口。最终达到线上能进行热更新操作。适合于应用大部分场景。  
+webpack-dev-server 本地化起一个服务。提供给live地址，通过whistle代理到本地开发，并监听端口。最终达到线上能进行热更新操作。适合于线上调试、开发代码。
 
 注意：node版本 >=12  webpack-dev-server >= 4
 
@@ -20,8 +20,7 @@ webpack-dev-server 本地化起一个服务。提供给live地址，通过whistl
 whistle配置为  
 `^https://zsz-danzi.github.io/webpack-hmr-whistle/dist/bundle.js$  http://127.0.0.1:4300/bundle.js  
 ^https://zsz-danzi.github.io/webpack-hmr-whistle/dist/dist/css/index.css$ http://127.0.0.1:4300/dist/css/index.css  
-zsz-danzi.github.io:4300 http://127.0.0.1:4300`
-
+zsz-danzi.github.io:4300 http://127.0.0.1:4300`  
 
 当 webSocketServer: 'sockjs'时，如下  
 `devServer: {
@@ -36,5 +35,5 @@ zsz-danzi.github.io:4300 http://127.0.0.1:4300`
 }`  
 whistle配置为  
 `^https://zsz-danzi.github.io/webpack-hmr-whistle/dist/bundle.js$  http://127.0.0.1:4300/bundle.js  
-^https://zsz-danzi.github.io/webpack-hmr-whistle/dist/dist/css/index.css$ http://127.0.0.1:4300/dist/css/index.css`
+^https://zsz-danzi.github.io/webpack-hmr-whistle/dist/dist/css/index.css$ http://127.0.0.1:4300/dist/css/index.css`  
 
